@@ -14,18 +14,37 @@
 </head>
 <body>
     <div class="wrapper">
+        {% block menu %}
+            <header class="header">
+                <ul class="main_menu">
+                    <li><a href="#"><p>Главная</p></a></li>
+                    <li><a href="#"><p>Блог</p></a></li>
+                    <li><a href="#"><p>Регистрация</p></a></li>
+                    <li><a href="#"><p>Логин</p></a></li>
+                    <li><a href="#"><p>Аккаунт</p></a></li>
+                    <li><a href="#"><p>Создать</p></a></li>
+                    <li><a href="#"><p>Выход</p></a></li>
+                </ul>
+            </header>
+        {% endblock menu %}
+
+        
         {% block content %}
-    
+
         {% endblock content %}
     
     
         {% block main_page %}
-        
+        <div class="content">
+                
+        </div>
         {% endblock main_page %}
     
     
         {% block footer %}
-        
+            <footer class="footer">
+                <a href="https://github.com/Python4k/mikedoit_flask">https://github.com/Python4k/mikedoit_flask</a>
+            </footer>
         {% endblock footer %}
     </div>
 </body>
