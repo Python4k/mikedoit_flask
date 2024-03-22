@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css' ) }}"> 
+    {% block title %}
+        {% if title %}
+            <title>Flask - {{ title }}</title>
+        {% else %}
+            <title>Flask Blog</title>
+        {% endif %}
+    {% endblock %}
 </head>
 <body>
-    {{ title }}
+    <div class="wrapper">
+        {% block content %}
+    
+        {% endblock content %}
+    
+    
+        {% block main_page %}
+        
+        {% endblock main_page %}
+    
+    
+        {% block footer %}
+        
+        {% endblock footer %}
+    </div>
 </body>
 </html>
