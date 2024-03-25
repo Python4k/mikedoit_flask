@@ -13,6 +13,10 @@ html, body{
 
 .logo img{
     float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 100px;
+    margin-bottom: 20px;
 }
 
 /* MAIN MENU */
@@ -68,6 +72,74 @@ html, body{
     width: 60%;
     margin: 100px auto 0;
     flex: 1 0 auto;
+}
+
+/* MAIN PAGE */
+
+.info{
+    display: flex;
+    margin: 80px auto 0;
+    width: 80%;
+    box-shadow: -5px 15px 10px aquamarine;
+    align-items: center;
+    border-radius: 200px;
+    font-family: monospace;
+    padding-bottom: 40px;
+}
+
+.description{
+    font-size: 35px;
+    margin: 0 auto;
+    text-align: right;
+    letter-spacing: 2px;
+
+}
+
+.names{
+    box-shadow: -5px 15px 10px aquamarine;
+    border-radius: 200px;
+    padding: 10px 20px;
+    margin-bottom: 40px;
+
+}
+
+.desc{
+    width: 100%;
+    font-weight: 600;
+    color: dodgerblue;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 0px 0px aquamarine;
+    border-radius: 200px;
+}
+
+.desc li{
+    margin-bottom: 10px;
+    font-style: normal;
+    box-shadow: 5px 3px 10px gray;
+    font-size: 25px;
+    padding: 5px;
+    font-family: monospace;
+    border-radius: 200px;
+    letter-spacing: 1px;
+}
+
+ul.checkmark li::before{
+    color: forestgreen;
+}
+
+ul a{
+    text-decoration: none;
+    color: mediumaquamarine;
+}
+
+.checkmark li:hover{
+    transition-duration: 0.05s;
+    box-shadow: 0px 12px 10px orange;
+}
+
+.checkmark li{
+    list-style: none;
 }
 
 /* FOOTER */
