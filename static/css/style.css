@@ -9,6 +9,12 @@ html, body{
     height: 100%;
 }
 
+/* LOGO */
+
+.logo img{
+    float: left;
+}
+
 /* MAIN MENU */
 
 .header{
