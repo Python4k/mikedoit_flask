@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+
+
+{% block main_page %}
+
+    <div class="wrapper">
+        <div class="info">
+            <div class="description">
+                <p class="names">Mike do IT Web development</p>
+                <div class="desc">
+                    <ul class="checkmark">
+                        <a href="{{ url_for('main.html_page' ) }}">
+                            <li>HTML</li>
+                        </a>
+                        <a href="{{ url_for('main.css_page' ) }}">
+                            <li>CSS</li>
+                        </a>
+                        <a href="{{ url_for('main.python_page' ) }}">
+                            <li>PYTHON</li>
+                        </a>
+                        <a href="{{ url_for('main.js_page' ) }}">
+                            <li>JAVASCRIPT</li>
+                        </a>
+                        <a href="{{ url_for('main.flask_page' ) }}">
+                            <li>FLASK</li>
+                        </a>
+                        <a href="{{ url_for('main.django_page' ) }}">
+                            <li>DJANGO</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock main_page %}
